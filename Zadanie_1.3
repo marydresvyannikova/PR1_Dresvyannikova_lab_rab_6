@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script>
+$(document).ready(function () {
+$("#but1").click(function () {
+$("[href]").hide();
+});
+$("#but2").click(function () {
+
+$("[href]").show();
+
+});
+});
+</script>
+</head>
+
+<body>
+<h2>This is a heading 2</h2>
+<p> This is a paragraph.</p>
+<p> <a href="http://htmlbook.ru/example/knob.html" > Четный элемент.</a></p>
+<p> <a href="http://htmlbook.ru/example/knob.html" >Нечетный элемент. </a></p>
+
+<button id="but1">Click me</button>
+<button id="but2">Click me for show</button>
+</body>
+
+</html>
