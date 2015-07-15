@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script>
+$(document).ready(function () {
+
+$("#but1").click(function () {
+$("div1").slideDown("slow")
+$("div2").slideDown("slow")
+$("div3").slideDown("slow")
+$("div4").slideDown("slow")
+$("div5").slideDown("slow")
+$("div6").slideDown("slow")
+});
+});
+
+
+</script>
+</head>
+<body>
+<button id="but1">Click me</button>
+
+<br><br>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:yellow;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div4" style="width:80px;height:80px;background-color:black;"></div><br>
+<div id="div5" style="width:80px;height:80px;background-color:pink;"></div><br>
+<div id="div6" style="width:80px;height:80px;background-color:gray;"></div><br>
+
+</body>
+</html>
