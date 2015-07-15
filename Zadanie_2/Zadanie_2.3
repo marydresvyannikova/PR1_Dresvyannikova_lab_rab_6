@@ -1,0 +1,28 @@
+<head>
+<script src="http://code.jquery.com/jquery-latest.js">
+</script>
+<script>
+
+
+
+
+
+
+
+    $(window).bind("resize",function(){ //Подключам событие изменение размеров Окна
+    window_resize(); //Вызываем функцию Обработки окна
+    return false});
+
+var resizeTimeoutId; //Таймер задержки исполнения
+
+function window_resize() {
+     clearTimeout(resizeTimeoutId); //удаляем все предыдущие события "Дребезга контактов"
+     resizeTimeoutId = setTimeout('alert_And_ResizeCode();', 10);
+}
+
+function alert_And_ResizeCode(){alert("Есть Cмена размера окна ");/*Тут Обработка события*/
+ };
+
+</script>
+</head>
+</html>
